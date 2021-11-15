@@ -1,5 +1,5 @@
-const  App = () => {
-  return <></>;
-}
+/** @format */
+
+const App = () => <>Hello</>;
 
 export default App;
