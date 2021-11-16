@@ -1,12 +1,10 @@
-/** @format */
-
 import { useSelector } from 'react-redux';
 import { Container, Table, Button } from 'react-bootstrap';
 
 const Mission = () => {
   const missions = useSelector((state) => state);
   const missionsArray = Object.entries(missions)[0][1];
-  console.log(missionsArray);
+
   return (
     <Container>
       <Table striped bordered hover>
