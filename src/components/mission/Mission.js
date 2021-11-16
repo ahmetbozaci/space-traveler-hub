@@ -1,7 +1,7 @@
-/** @format */
-
 import { useSelector, useDispatch } from 'react-redux';
-import { Container, Table, Button } from 'react-bootstrap';
+import {
+  Container, Table, Button, Badge,
+} from 'react-bootstrap';
 import { joinMission, leaveMission } from '../../redux/missions/missions';
 
 const Mission = () => {
@@ -37,9 +37,9 @@ const Mission = () => {
               <td>{item.description}</td>
               <td className="align-items-center">
                 {item.reserved ? (
-                  <Button variant="info">Active Member</Button>
+                  <Badge bg="info">Active Member</Badge>
                 ) : (
-                  <Button variant="secondary">NOT A MEMBER</Button>
+                  <Badge bg="secondary">NOT A MEMBER</Badge>
                 )}
               </td>
               <td>
