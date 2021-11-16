@@ -19,14 +19,14 @@ const Header = () => (
           Space Travelers Hub
         </Navbar.Brand>
         <Nav>
-          <Nav.Link>
-            <Link to="/rockets"> Rockets </Link>
+          <Nav.Link as={Link} to="/rockets">
+            Rockets
           </Nav.Link>
-          <Nav.Link>
-            <Link to="/missions"> Missions </Link>
+          <Nav.Link as={Link} to="/missions">
+            Missions
           </Nav.Link>
-          <Nav.Link>
-            <Link to="/my-profile"> My Profile </Link>
+          <Nav.Link as={Link} to="/my-profile">
+            My Profile
           </Nav.Link>
         </Nav>
       </Container>
