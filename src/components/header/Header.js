@@ -9,7 +9,7 @@ const Header = () => (
     <Navbar bg="light" expand="lg">
       <Container>
         <NavbarBrand><img src={planet} alt="planet" /></NavbarBrand>
-        <Nav>Rocket</Nav>
+        <Nav><Link to="/">Rocket</Link></Nav>
         <Nav><Link to="/mission">Mission</Link></Nav>
         <Nav>Profile</Nav>
       </Container>
