@@ -2,21 +2,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   Container, Table, Button, Badge,
 } from 'react-bootstrap';
-import { joinMission, leaveMission } from '../../redux/missions/missions';
+import { joinMission } from '../../redux/missions/missions';
 
 const Mission = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state);
   const missionsArray = Object.entries(missions)[0][1];
 
-  const join = (e) => {
+  const handleClick = (e) => {
     const { id } = e.target.parentNode.parentNode;
     dispatch(joinMission(id));
-  };
-
-  const leave = (e) => {
-    const { id } = e.target.parentNode.parentNode;
-    dispatch(leaveMission(id));
   };
 
   return (
@@ -44,11 +39,11 @@ const Mission = () => {
               </td>
               <td>
                 {item.reserved ? (
-                  <Button variant="outline-danger" onClick={leave}>
+                  <Button variant="outline-danger" onClick={handleClick}>
                     Leave Mission
                   </Button>
                 ) : (
-                  <Button variant="outline-secondary" onClick={join}>
+                  <Button variant="outline-secondary" onClick={handleClick}>
                     Join Mission
                   </Button>
                 )}
