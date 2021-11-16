@@ -1,22 +1,24 @@
-/**
- * /* eslint-disable no-unused-vars
- *
- * @format
- */
+/** @format */
 
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Table, Button } from 'react-bootstrap';
-import { joinMission } from '../../redux/missions/missions';
+import { joinMission, leaveMission } from '../../redux/missions/missions';
 
 const Mission = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state);
   const missionsArray = Object.entries(missions)[0][1];
 
-  const handleClick = (e) => {
+  const join = (e) => {
     const { id } = e.target.parentNode.parentNode;
     dispatch(joinMission(id));
   };
+
+  const leave = (e) => {
+    const { id } = e.target.parentNode.parentNode;
+    dispatch(leaveMission(id));
+  };
+
   return (
     <Container>
       <Table striped bordered hover>
@@ -42,11 +44,11 @@ const Mission = () => {
               </td>
               <td>
                 {item.reserved ? (
-                  <Button variant="outline-danger" onClick={handleClick}>
+                  <Button variant="outline-danger" onClick={leave}>
                     Leave Mission
                   </Button>
                 ) : (
-                  <Button variant="outline-secondary" onClick={handleClick}>
+                  <Button variant="outline-secondary" onClick={join}>
                     Join Mission
                   </Button>
                 )}
