@@ -1,4 +1,9 @@
-/* eslint-disable no-unused-vars */
+/**
+ * /* eslint-disable no-unused-vars
+ *
+ * @format
+ */
+
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Table, Button } from 'react-bootstrap';
 import { joinMission } from '../../redux/missions/missions';
@@ -29,12 +34,22 @@ const Mission = () => {
               <td>{item.mission_name}</td>
               <td>{item.description}</td>
               <td className="align-items-center">
-                <Button variant="secondary">NOT A MEMBER</Button>
+                {item.reserved ? (
+                  <Button variant="info">Active Member</Button>
+                ) : (
+                  <Button variant="secondary">NOT A MEMBER</Button>
+                )}
               </td>
               <td>
-                <Button variant="outline-secondary" onClick={handleClick}>
-                  Join Mission
-                </Button>
+                {item.reserved ? (
+                  <Button variant="outline-danger" onClick={handleClick}>
+                    Leave Mission
+                  </Button>
+                ) : (
+                  <Button variant="outline-secondary" onClick={handleClick}>
+                    Join Mission
+                  </Button>
+                )}
               </td>
             </tr>
           ))}
