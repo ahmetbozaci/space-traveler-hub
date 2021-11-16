@@ -6,7 +6,7 @@ const App = () => (
   <>
     <Header />
     <Routes>
-      <Route path="/mission" element={<Mission />} />
+      <Route path="/missions" element={<Mission />} />
     </Routes>
   </>
 );
