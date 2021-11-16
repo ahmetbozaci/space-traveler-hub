@@ -1,15 +1,12 @@
-/* eslint-disable no-unused-vars */
 /** @format */
 
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Container, Table } from 'react-bootstrap';
-import { getMissions } from '../../redux/missions/missions';
+import { useSelector } from 'react-redux';
+import { Container, Table, Button } from 'react-bootstrap';
 
 const Mission = () => {
-  const dispatch = useDispatch();
   const missions = useSelector((state) => state);
-
+  const missionsArray = Object.entries(missions)[0][1];
+  console.log(missionsArray);
   return (
     <Container>
       <Table striped bordered hover>
@@ -22,12 +19,18 @@ const Mission = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Thaicom</td>
-            <td>Lorem ipsummm</td>
-            <td>Active Member, NOT A MEMBER</td>
-            <td>Join Mission, Leave Mission</td>
-          </tr>
+          {missionsArray.map((item) => (
+            <tr key={item.mission_id}>
+              <td>{item.mission_name}</td>
+              <td>{item.description}</td>
+              <td className="align-items-center">
+                <Button variant="secondary">NOT A MEMBER</Button>
+              </td>
+              <td>
+                <Button variant="outline-secondary">Join Mission</Button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </Container>
