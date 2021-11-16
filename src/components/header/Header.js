@@ -1,21 +1,37 @@
-import {
-  Navbar, Container, Nav, NavbarBrand,
-} from 'react-bootstrap';
+/** @format */
+
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import planet from '../../planet.png';
 
 const Header = () => (
-  <div>
-    <Navbar bg="light" expand="lg">
+  <>
+    <Navbar bg="light">
       <Container>
-        <NavbarBrand><img src={planet} alt="planet" /></NavbarBrand>
-        <Nav>Rocket</Nav>
-        <Nav><Link to="/mission">Mission</Link></Nav>
-        <Nav>Profile</Nav>
+        <Navbar.Brand href="#home">
+          <img
+            src={planet}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+          Space Travelers Hub
+        </Navbar.Brand>
+        <Nav>
+          <Nav.Link>
+            <Link to="/rockets"> Rockets </Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="/missions"> Missions </Link>
+          </Nav.Link>
+          <Nav.Link>
+            <Link to="/my-profile"> My Profile </Link>
+          </Nav.Link>
+        </Nav>
       </Container>
     </Navbar>
-  </div>
-
+  </>
 );
 
 export default Header;
