@@ -1,0 +1,53 @@
+[33mcommit e392b28bf39368e43f18978ad89e8b5e71a73ee6[m[33m ([m[1;36mHEAD -> [m[1;32mmission-fetch-data[m[33m, [m[1;31morigin/mission-fetch-data[m[33m)[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Tue Nov 16 12:23:58 2021 +0300
+
+    Update navbar
+
+[33mcommit 93b3686a6cdf8b2f19a47263a80d3f8a433b2158[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Tue Nov 16 11:49:54 2021 +0300
+
+    Create mission table
+
+[33mcommit ceddb6382944ff9d3f6cc8961ed7e0a66e2c83f1[m[33m ([m[1;31morigin/setup[m[33m, [m[1;31morigin/develop[m[33m, [m[1;32msetup[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Tue Nov 16 11:16:18 2021 +0300
+
+    Create store, install thunk, redux, react-redux
+
+[33mcommit 65918596a9bfcf6d26ff9f56366291044ad9f88a[m
+Author: victor-chukwu <okenwa1993@gmail.com>
+Date:   Mon Nov 15 15:29:57 2021 +0100
+
+    Added Routers
+
+[33mcommit 6ee9a9f0acfe988a840c31810d1a538c983b3c07[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Mon Nov 15 16:01:47 2021 +0300
+
+    Fix airbnb error
+
+[33mcommit 8203e94d9b0c2b90dfbbf91bf7cba713b768666b[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Mon Nov 15 15:58:44 2021 +0300
+
+    Install router, clear files
+
+[33mcommit 59493ac2eb05694c681d6527e7a0cff70428efce[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Mon Nov 15 15:53:04 2021 +0300
+
+    Add linter files
+
+[33mcommit 728f6d96c54f86bb9516eb9eb9524956b92185a6[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Mon Nov 15 15:50:51 2021 +0300
+
+    Install react
+
+[33mcommit d3489d2414cad1f84f0fd4c018b2c1ccb5d0ada9[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Ahmet <ahmt9417@gmail.com>
+Date:   Mon Nov 15 15:40:09 2021 +0300
+
+    Add readme
