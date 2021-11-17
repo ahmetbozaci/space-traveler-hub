@@ -1,7 +1,10 @@
 /* eslint-disable camelcase */
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { Button } from 'react-bootstrap';
+import { addToReserve } from '../../redux/rocketReducer/RocketAction';
 
 const RocketProfile = () => {
+  const dispatch = useDispatch();
   const rocket = useSelector((state) => state.ReducerRocket);
   const { rockets } = rocket;
   const reservedRockets = rockets.filter((item) => item.reserved === true);
@@ -16,8 +19,11 @@ const RocketProfile = () => {
             reservedRockets.map((item) => {
               const { id, rocket_name } = item;
               return (
-                <div key={id}>
-                  <h5 className="my-3 border-bottom pb-3 px-3">{rocket_name}</h5>
+                <div key={id} className="mt-3 border-bottom pb-3 px-3 d-flex align-items-center">
+                  <h5>{rocket_name}</h5>
+                  <Button variant="primary" size="sm" className="mx-3" onClick={() => dispatch(addToReserve(id))}>
+                    Cancel Reservation
+                  </Button>
                 </div>
               );
             })
