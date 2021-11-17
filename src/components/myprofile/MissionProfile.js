@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { Alert, ListGroup, Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
-import { joinMission } from '../../redux/missions/missions';
+import { joinLeaveMission } from '../../redux/missions/missions';
 
 const MissionProfile = () => {
   const dispatch = useDispatch();
@@ -9,7 +8,7 @@ const MissionProfile = () => {
   const filteredMission = missions.filter((mission) => mission.reserved);
 
   const handleClick = (e) => {
-    dispatch(joinMission(e.target.id));
+    dispatch(joinLeaveMission(e.target.id));
   };
 
   return (
