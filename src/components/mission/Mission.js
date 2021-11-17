@@ -2,14 +2,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   Container, Table, Button, Badge,
 } from 'react-bootstrap';
-import { joinMission } from '../../redux/missions/missions';
+import { joinLeaveMission } from '../../redux/missions/missions';
 
 const Mission = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.mission);
   const handleClick = (e) => {
     const { id } = e.target.parentNode.parentNode;
-    dispatch(joinMission(id));
+    dispatch(joinLeaveMission(id));
   };
 
   return (
