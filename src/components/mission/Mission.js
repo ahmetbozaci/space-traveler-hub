@@ -1,16 +1,3 @@
-/**
- * /* eslint-disable no-undef
- *
- * @format
- */
-
-/**
- * /* eslint-disable no-undef
- *
- * @format
- */
-
-/* eslint-disable no-unused-vars */
 import { useSelector, useDispatch } from 'react-redux';
 import {
   Container, Table, Button, Badge,
