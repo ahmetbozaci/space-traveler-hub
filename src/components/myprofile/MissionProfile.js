@@ -16,10 +16,28 @@ const MissionProfile = () => {
       <h3 className="p-3">My Missions</h3>
       <ListGroup className="mt-2">
         {filteredMission.map((mission) => (
-          <ListGroup.Item key={mission.mission_id} className="p-4 d-flex justify-content-between">
+          <ListGroup.Item
+            key={mission.mission_id}
+            className="p-4 d-flex justify-content-between"
+          >
             {mission.mission_name}
             <div>
-              <Button onClick={handleClick} id={mission.mission_id} variant="danger">Leave Mission</Button>
+              <Button
+                variant="info"
+                className="mx-2"
+                onClick={() => {
+                  window.open(mission.wikipedia);
+                }}
+              >
+                Read More
+              </Button>
+              <Button
+                onClick={handleClick}
+                id={mission.mission_id}
+                variant="danger"
+              >
+                Leave Mission
+              </Button>
             </div>
           </ListGroup.Item>
         ))}
