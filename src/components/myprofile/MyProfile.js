@@ -1,22 +1,24 @@
 /** @format */
 
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
   const missions = useSelector((state) => state.mission);
   console.log(missions);
   return (
-    <Container className="d-flex justify-content-around">
-      <div>
-        <h3>My Missions</h3>
-        {/* {missions.filter((item) => (
-          item.reserved ? <p>item.mission_name</p> : <p>nothing</p>
+    <Container>
+      <Row>
+        <Col xs={12} md={6}>
+          <h3>My Missions</h3>
+          {/* {missions.filter((item) => (
+          <p>{item.reserved}</p>
         ))} */}
-      </div>
-      <div className="">
-        <h3>My Rockets</h3>
-      </div>
+        </Col>
+        <Col xs={12} md={6}>
+          <h3>My Rockets</h3>
+        </Col>
+      </Row>
     </Container>
   );
 };
