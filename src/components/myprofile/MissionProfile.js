@@ -12,8 +12,8 @@ const MissionProfile = () => {
   };
 
   return (
-    <div>
-      <h3>My Missions</h3>
+    <div className="mx-3">
+      <h3 className="p-3">My Missions</h3>
       <ListGroup className="mt-2">
         {filteredMission.map((mission) => (
           <ListGroup.Item key={mission.mission_id} className="p-4 d-flex justify-content-between">
