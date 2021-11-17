@@ -1,3 +1,16 @@
+/**
+ * /* eslint-disable no-undef
+ *
+ * @format
+ */
+
+/**
+ * /* eslint-disable no-undef
+ *
+ * @format
+ */
+
+/* eslint-disable no-unused-vars */
 import { useSelector, useDispatch } from 'react-redux';
 import {
   Container, Table, Button, Badge,
@@ -6,9 +19,7 @@ import { joinMission } from '../../redux/missions/missions';
 
 const Mission = () => {
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state);
-  const missionsArray = Object.entries(missions)[0][1];
-
+  const missions = useSelector((state) => state.mission);
   const handleClick = (e) => {
     const { id } = e.target.parentNode.parentNode;
     dispatch(joinMission(id));
@@ -26,19 +37,19 @@ const Mission = () => {
           </tr>
         </thead>
         <tbody>
-          {missionsArray.map((item) => (
-            <tr key={item.mission_id} id={item.mission_id}>
-              <td>{item.mission_name}</td>
-              <td>{item.description}</td>
-              <td className="align-items-center">
-                {item.reserved ? (
+          {missions.map((value) => (
+            <tr key={value.mission_id} id={value.mission_id}>
+              <td>{value.mission_name}</td>
+              <td>{value.description}</td>
+              <td className="align-values-center">
+                {value.reserved ? (
                   <Badge bg="info">Active Member</Badge>
                 ) : (
                   <Badge bg="secondary">NOT A MEMBER</Badge>
                 )}
               </td>
               <td>
-                {item.reserved ? (
+                {value.reserved ? (
                   <Button variant="outline-danger" onClick={handleClick}>
                     Leave Mission
                   </Button>
