@@ -10,7 +10,7 @@ const Rocket = () => {
   const { rockets } = rocket;
   const dispatch = useDispatch();
   return (
-    <Container fluid className="my-5">
+    <Container className="my-5 mx-5">
 
       {
           rockets.map((item) => {
@@ -24,6 +24,8 @@ const Rocket = () => {
                   <Image
                     src={flickr_images}
                     alt="flick"
+                    width="380"
+                    height="250"
                     fluid
                     rounded
                   />
