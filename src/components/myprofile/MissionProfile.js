@@ -9,8 +9,7 @@ const MissionProfile = () => {
   const filteredMission = missions.filter((mission) => mission.reserved);
 
   const handleClick = (e) => {
-    const { id } = e.target.id;
-    dispatch(joinMission(id));
+    dispatch(joinMission(e.target.id));
   };
 
   return (
@@ -21,7 +20,7 @@ const MissionProfile = () => {
           <ListGroup.Item key={mission.mission_id} className="p-4 d-flex justify-content-between">
             {mission.mission_name}
             <div>
-              <Button onClick={handleClick} id={mission.mission_id}>Leave Mission</Button>
+              <Button onClick={handleClick} id={mission.mission_id} variant="danger">Leave Mission</Button>
             </div>
           </ListGroup.Item>
         ))}
