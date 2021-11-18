@@ -14,7 +14,7 @@ const Mission = () => {
 
   return (
     <Container>
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive="sm">
         <thead>
           <tr>
             <th>Mission</th>
@@ -28,14 +28,14 @@ const Mission = () => {
             <tr key={value.mission_id} id={value.mission_id}>
               <td>{value.mission_name}</td>
               <td>{value.description}</td>
-              <td className="align-values-center">
+              <td className="align-middle">
                 {value.reserved ? (
                   <Badge bg="info">Active Member</Badge>
                 ) : (
                   <Badge bg="secondary">NOT A MEMBER</Badge>
                 )}
               </td>
-              <td>
+              <td className="align-middle">
                 {value.reserved ? (
                   <Button variant="outline-danger" onClick={handleClick}>
                     Leave Mission

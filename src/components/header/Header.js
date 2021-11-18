@@ -1,12 +1,5 @@
-/* eslint-disable no-unused-vars */
-/**
- * /* eslint-disable no-unused-vars
- *
- * @format
- */
-
 import {
-  Navbar, Nav, Container, Offcanvas, NavLink,
+  Navbar, Nav, Container, NavLink,
 } from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import { Link } from 'react-router-dom';
@@ -28,9 +21,9 @@ const Header = () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <NavbarCollapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link as={Link} to="/">
+          <NavLink as={Link} to="/">
             Rockets
-          </Nav.Link>
+          </NavLink>
           <NavLink as={Link} to="/missions">
             Missions
           </NavLink>
