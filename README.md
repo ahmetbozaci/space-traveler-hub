@@ -1,11 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Book Store
-## React application to keep track of books using Redux.
+# Space Traveller Hub
+## React application to keep book rockets and mission.
 ### This MVP version allows you to:
-- Display a list of books.
-- Add a book.
-- Remove a selected book.
+- reserve a rocket.
+- join a mission.
+- cancell reservation for rocket.
+- cancell mission join.
 ![image](download.png)
 ## Built With
 
@@ -13,7 +14,7 @@
 - Javascript
 - React
 - Redux
-- SCSS
+- Bootstrap
 
 ## Live Demo
 
@@ -23,7 +24,7 @@
 ## Setup
 - Clone this project
 ```
-- $ git clone `$ https://github.com/ahmetbozaci/book-store.git`
+- $ git clone `$ https://github.com/ahmetbozaci/space-traveler-hub`
 - $ cd book-store
 ```
 - Install npm packages
@@ -37,9 +38,12 @@
 ## Authors
 
 👤 **Ahmet Bozacı**
+👤 **Victor Chukwu**
 - Github:[ahmetbozaci](https://github.com/ahmetbozaci)
 - Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
 - LinkedIn:[ahmetbozaci](https://www.linkedin.com/in/ahmetbozaci/)
+- GitHub: [@VICTOR-CHUKWU](https://github.com/VICTOR-CHUKWU)
+- LinkedIn: [Victor-chukwu](https://www.linkedin.com/in/victor-chukwu-95a020143)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
