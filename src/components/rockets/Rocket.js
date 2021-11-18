@@ -39,7 +39,7 @@ const Rocket = () => {
                     {description}
                   </p>
                   <Button variant={variants} onClick={() => dispatch(addToReserve(id))}>
-                    {item.reserved ? 'Cancell Reservation' : ' Reserve Rocket'}
+                    {item.reserved ? 'Cancel Reservation' : ' Reserve Rocket'}
                   </Button>
                 </Col>
               </Row>

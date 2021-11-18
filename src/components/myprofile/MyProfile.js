@@ -6,8 +6,8 @@ const MyProfile = () => (
   <Container>
     <Row>
       <Col xs={12} md={6}><MissionProfile /></Col>
-      <Col xs={12} md={6}>
-        <h3>My Rockets</h3>
+      <Col xs={12} md={6} className="mt-2">
+        <h3 className="m-3">My Rockets</h3>
         <div className="border bg-white shadow">
           <RocketProfile />
         </div>
