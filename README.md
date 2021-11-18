@@ -2,12 +2,25 @@
 
 # Space Traveller Hub
 ## React application to keep book rockets and mission.
-![screenshot](screenshot.png)
+![screenshot](screencast.gif)
 ### This MVP version allows you to:
-- Reserve a rocket.
-- Join a mission.
-- Cancel reservation for rocket.
-- Cancel mission join.
+1.  Website include 3 pages,  `rockets`, `mission`, and `my profile.` The main page is the `rockets page`. 
+2.  Use `react-router  v6`.  When clicking the page in the navigation bar that page is opening.
+3.  Rockets and missions page include: 
+       - Rockets from [API](https://api.spacexdata.com/v3/rockets)
+       - Missions from [API](https://api.spacexdata.com/v3/missions)
+       - Every rocket and mission  include a  button for sending API new key, value `reserved: true` also it is work reserve `reserved: false`
+       - If `reserved: true`  `not a  member` **badge** change to `active member` **badge** on missions page or add  `reserved` **badge** on rockets page.
+4. My profile page includes:
+   - Missions and rockets which include `reserved: true`
+   - Also this section includes the `leave` or `cancel` button for making `reserved: false`
+   - Mission section includes an extra `read more` button that is opening a Wikipedia link about the mission.
+   - Optional parts added to the kanban board.
+5. Page styled with `react-bootstrap` so we make it responsive.
+
+
+
+
 ## Built With
 
 - Html
