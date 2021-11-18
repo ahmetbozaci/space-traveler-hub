@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import { ReducerRocket } from './rocketReducer/RocketReducer';
+import ReducerRocket from './rocketReducer/RocketReducer';
 import { fetchRockets } from './rocketReducer/RocketAction';
 import missionReducer from './missions/missions';
 

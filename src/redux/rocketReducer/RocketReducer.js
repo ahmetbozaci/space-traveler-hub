@@ -4,8 +4,7 @@ const initialState = {
   rockets: [],
 };
 
-// eslint-disable-next-line import/prefer-default-export
-export const ReducerRocket = (state = initialState, { type, payload }) => {
+const ReducerRocket = (state = initialState, { type, payload }) => {
   if (type === RocketConstants.FETCH_ROCKET) {
     return {
       rockets: [...state.rockets, ...payload],
@@ -25,3 +24,5 @@ export const ReducerRocket = (state = initialState, { type, payload }) => {
   }
   return state;
 };
+
+export default ReducerRocket;
