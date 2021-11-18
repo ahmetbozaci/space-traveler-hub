@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<nav
+  className="navbar navbar-light bg-light"
+>
+  <div
+    className="container-fluid"
+  >
+    <span
+      className="navbar-brand"
+    >
+      <img
+        alt="React Bootstrap logo"
+        className="d-inline-block align-top"
+        height="30"
+        src="planet.png"
+        width="30"
+      />
+      Space Travelers Hub
+    </span>
+    <button
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+  </div>
+</nav>
+`;
