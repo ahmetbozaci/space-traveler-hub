@@ -34,7 +34,7 @@ const Rocket = () => {
                   <h5>{rocket_name}</h5>
                   <p>
                     {item.reserved && (
-                      <Badge bg="success">Reserved</Badge>
+                      <Badge bg="info">Reserved</Badge>
                     )}
                     {description}
                   </p>

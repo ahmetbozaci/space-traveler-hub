@@ -19,7 +19,7 @@ const RocketProfile = () => {
             reservedRockets.map((item) => {
               const { id, rocket_name } = item;
               return (
-                <div key={id} className="mt-3 border-bottom pb-3 px-3 d-flex align-items-center">
+                <div key={id} className="mt-3 border-bottom pb-3 px-3 d-sm-flex justify-content-between align-items-center text-center">
                   <h5>{rocket_name}</h5>
                   <Button variant="primary" size="sm" className="mx-3" onClick={() => dispatch(addToReserve(id))}>
                     Cancel Reservation
