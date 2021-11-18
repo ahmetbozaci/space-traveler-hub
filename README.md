@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Traveller Hub
+# Space Traveler Hub
 ## React application to keep book rockets and mission.
 ![screenshot](screencast.gif)
 1.  Website include 3 pages,  `rockets`, `mission`, and `my profile.` The main page is the `rockets page`. 
