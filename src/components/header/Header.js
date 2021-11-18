@@ -1,10 +1,13 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {
+  Navbar, Nav, Container, Offcanvas,
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import planet from '../../planet.png';
 
 const Header = () => (
-  <Navbar bg="" className="p-4 my-4 mx-5 border-bottom border-2">
-    <Container>
+
+  <Navbar bg="light" expand={false}>
+    <Container fluid>
       <Navbar.Brand>
         <img
           src={planet}
@@ -15,17 +18,29 @@ const Header = () => (
         />
         Space Travelers Hub
       </Navbar.Brand>
-      <Nav>
-        <Nav.Link as={Link} to="/">
-          Rockets
-        </Nav.Link>
-        <Nav.Link as={Link} to="/missions">
-          Missions
-        </Nav.Link>
-        <Nav.Link as={Link} to="/my-profile">
-          My Profile
-        </Nav.Link>
-      </Nav>
+      <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Navbar.Offcanvas
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+        placement="end"
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title id="offcanvasNavbarLabel">Space Travelers Hub</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Nav>
+            <Nav.Link as={Link} to="/">
+              Rockets
+            </Nav.Link>
+            <Nav.Link as={Link} to="/missions">
+              Missions
+            </Nav.Link>
+            <Nav.Link as={Link} to="/my-profile">
+              My Profile
+            </Nav.Link>
+          </Nav>
+        </Offcanvas.Body>
+      </Navbar.Offcanvas>
     </Container>
   </Navbar>
 );
