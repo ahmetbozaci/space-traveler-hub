@@ -3,12 +3,11 @@
 # Space Traveller Hub
 ## React application to keep book rockets and mission.
 ![screenshot](screencast.gif)
-### This MVP version allows you to:
 1.  Website include 3 pages,  `rockets`, `mission`, and `my profile.` The main page is the `rockets page`. 
 2.  Use `react-router  v6`.  When clicking the page in the navigation bar that page is opening.
 3.  Rockets and missions page include: 
-       - Rockets from [API](https://api.spacexdata.com/v3/rockets)
-       - Missions from [API](https://api.spacexdata.com/v3/missions)
+       - Rockets from [API](https://api.spacexdata.com/v3/rockets).
+       - Missions from [API](https://api.spacexdata.com/v3/missions).
        - Every rocket and mission  include a  button for sending API new key, value `reserved: true` also it is work reserve `reserved: false`
        - If `reserved: true`  `not a  member` **badge** change to `active member` **badge** on missions page or add  `reserved` **badge** on rockets page.
 4. My profile page includes:
@@ -27,7 +26,7 @@
 - Javascript
 - React
 - Redux
-- Bootstrap
+- React-Bootstrap
 
 ## Live Demo
 
