@@ -2,12 +2,12 @@
 
 # Space Traveller Hub
 ## React application to keep book rockets and mission.
+![screenshot](screenshot.png)
 ### This MVP version allows you to:
-- reserve a rocket.
-- join a mission.
-- cancell reservation for rocket.
-- cancell mission join.
-![image](download.png)
+- Reserve a rocket.
+- Join a mission.
+- Cancel reservation for rocket.
+- Cancel mission join.
 ## Built With
 
 - Html
@@ -18,8 +18,8 @@
 
 ## Live Demo
 
-<!-- - [Math Magicians-Netlify](https://math-magicians-react.netlify.app/)
-- [Math Magicians-Heroku](https://mathmagician-react-app.herokuapp.com/) -->
+[Space Travelers Hub-Netlify](https://space-traveler-hub.netlify.app/)
+
 
 ## Setup
 - Clone this project
@@ -38,10 +38,11 @@
 ## Authors
 
 👤 **Ahmet Bozacı**
-👤 **Victor Chukwu**
 - Github:[ahmetbozaci](https://github.com/ahmetbozaci)
 - Twitter:[ahmtbozaci](https://twitter.com/ahmtbozaci)
 - LinkedIn:[ahmetbozaci](https://www.linkedin.com/in/ahmetbozaci/)
+
+👤 **Victor Chukwu**
 - GitHub: [@VICTOR-CHUKWU](https://github.com/VICTOR-CHUKWU)
 - LinkedIn: [Victor-chukwu](https://www.linkedin.com/in/victor-chukwu-95a020143)
 ## 🤝 Contributing
