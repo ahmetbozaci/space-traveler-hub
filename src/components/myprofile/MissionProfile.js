@@ -1,3 +1,5 @@
+/** @format */
+
 import { Alert, ListGroup, Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { joinLeaveMission } from '../../redux/missions/missions';
@@ -12,16 +14,18 @@ const MissionProfile = () => {
   };
 
   return (
-    <div className="mx-3">
+    <div className="">
       <h3 className="p-3">My Missions</h3>
       <ListGroup className="mt-2">
         {filteredMission.map((mission) => (
           <ListGroup.Item
             key={mission.mission_id}
-            className="p-4 d-flex justify-content-between"
+            className="d-xl-flex justify-content-between p-4 "
           >
-            {mission.mission_name}
-            <div>
+            <div className="my-1 p-1 ms-4">
+              {mission.mission_name}
+            </div>
+            <div className="text-center">
               <Button
                 variant="info"
                 className="mx-2"
